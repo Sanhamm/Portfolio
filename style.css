@@ -1,25 +1,46 @@
+/*-------------------------top intro----------*/
+body {
+    margin: 0;
+}
 
 #top {
     max-width: 1200px;
     margin: auto;
-    padding: 200px 50px;
+    padding: 245px 50px;
+    margin-bottom: 30px;
 
 }
+
 #top h1 {
     font-size: 3rem;
 }
- #top h1, h2, button {
-     margin-left: 100px;
-     margin-top: 20px;
+
+html {
+    scroll-behavior: smooth;
+}
+
+#top h1,#top h2 {
+    margin-left: 100px;
+    margin-top: 20px;
  }
+
+#top a {
+    border: 2px solid orange;
+    padding: 5px 20px;
+    margin-left: 100px;
+    border-radius: 2px;
+    color: orange;
+    text-decoration: none;
+  }
+ 
 
 #portrait {
     max-width: 300px;
 }
 
 #top button {
-    color: aqua;
-    border:2px solid aqua;
+    color: orange;
+    border:2px solid orange;
     background-color: white;
     padding: 5px 10px;
     border-radius: 2px;
@@ -27,6 +48,213 @@
 
 #top button:hover {
     color: white;
-    border:2px solid aqua;
-    background-color: aqua;
+    border:2px solid orange;
+    background-color: orange;
+    cursor: pointer;
+}
+
+/*-----------------about me-----------------*/
+#aboutme {
+    background-color: orange;
+    padding: 110px 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0;
+}
+
+#aboutme h2,#aboutme div {
+    max-width: 1280px;
+    margin: auto;
+}
+
+#aboutme p {
+    max-width: 400px;
+    font-size: 1.4rem;
+}
+
+#aboutme h2 {
+    font-size: 2rem;
+}
+
+#aboutme h3 {
+    font-size: 1.7rem;
+}
+
+#aboutme img {
+    height: 420px;
+    width: 420px;
+    object-fit:cover;
+    border-radius: 3px;
+    border: 1px solid black;
+}
+
+#aboutme a {
+    color: rgba(245, 245, 245, 0.9);
+    border:2px solid rgba(245, 245, 245, 0.9);
+    background-color: orange;
+    padding: 5px 10px;
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+#aboutme a:hover{
+    color: orange;
+    border:2px solid rgba(245, 245, 245, 0.9);
+    background-color: rgba(245, 245, 245, 0.9);
+}
+
+/*--------------------workshow---------------*/
+
+#head {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.workShow {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1280px;
+    margin: auto;
+    padding: 80px 0px;
+}
+
+
+.workShow p {
+    max-width: 400px;
+    font-size: 1.3rem;
+}
+
+.workShow img {
+    width: 90%;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin: auto;
+}
+
+.workShow p, .workShow h2, .workShow details, .workShow a   {
+    padding: 0px 30px;
+
+}
+
+.workShow a {
+    border: 2px solid orange;
+    padding: 5px 20px;
+    margin-left: 30px;
+    border-radius: 2px;
+    color: orange;
+    text-decoration: none;
+}
+
+.workShow a:hover {
+    background-color: orange;
+    color: white;
+}
+
+.workShow details > summary{
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.text h2, .text p, .text a, .text details {
+    margin-bottom: 60px;
+}
+
+details > li {
+    list-style-type: none;
+}
+
+.mobile {
+    display: none;
+}
+
+@media screen and (max-width: 1100px){
+
+    .workShow {
+        grid-template-columns: 1fr;
+        margin-left: 30px;
+    }
+
+    #aboutme {
+        grid-template-columns: 1fr;
+        padding-top: 50px;
+    }
+
+    #top h1 {
+        font-size: 1.8rem;
+    }
+
+    #aboutme p {
+        font-size: 1.2rem;
+    }
+
+    #aboutme h2, #aboutme h3 {
+        font-size: 1.5rem;
+    }
+
+    #aboutme img {
+        margin-bottom: 30px;
+    }
+
+    #top a {
+        margin-left: auto;
+    }
+
+    #top h1, #top h2 {
+        margin-left: auto;
+    }
+
+}
+
+@media screen and (max-width: 400px){
+
+    #top h1 {
+        font-size: 1.4rem;
+    }
+
+    #aboutme p, .text p {
+        font-size: 1rem;
+    }
+
+    #aboutme h2, #aboutme h3, .text h2 {
+        font-size: 1.2rem;
+    }
+
+    #aboutme img {
+        margin-bottom: 30px;
+    }
+
+    .workShow img {
+        width: 100%;
+    }
+    
+    .workShow {
+        margin-left: 0px;
+    }
+
+    #aboutme img {
+        height: 320px;
+        width: 320px;
+    }
+
+    #top a {
+        margin-left: auto;
+    }
+
+    #top h1, #top h2 {
+        margin-left: auto;
+    }
+
+    #aboutme {
+        padding: 0;
+    }
+
+    #aboutme h2, #aboutme p, #aboutme a, #aboutme h3 {
+        margin: 10px;
+    }
+
+    #aboutme h2, #aboutme p, #aboutme h3{
+        padding-bottom: 10px;
+    }
+
 }
