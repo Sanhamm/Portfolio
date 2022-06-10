@@ -247,6 +247,7 @@ details > li {
 
     #aboutme {
         padding: 0;
+        padding-top: 50px;
     }
 
     #aboutme h2, #aboutme p, #aboutme a, #aboutme h3 {
